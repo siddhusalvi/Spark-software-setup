@@ -1,10 +1,7 @@
 import org.apache.spark.{SparkConf, SparkContext}
 
 object s3wordcounter extends App {
-  val myAccessKey = "AKIAJF2DZFGGEYETALOQ"
-  val mySecretKey = "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"
-  val bucket = "sparkweek6"
-  val filepath = "words.csv"
+
 
   val conf = new SparkConf().setAppName("s3wordcounter").setMaster("local")
   val sc = new SparkContext(conf)
